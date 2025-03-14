@@ -1,9 +1,0 @@
-opencv-python
-numpy
-tifffile
-matplotlib
-seaborn
-Pillow
-reportlab
-tqdm
-scipy
