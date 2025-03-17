@@ -3,7 +3,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/wormLove/Biological_Image_Denoise.svg)](https://github.com/wormLove/Biological_Image_Denoise)
 [![GitHub issues](https://img.shields.io/github/issues/wormLove/Biological_Image_Denoise.svg)](https://github.com/wormLove/Biological_Image_Denoise/issues)
-[![License](https://img.shields.io/github/license/wormLove/Biological_Image_Denoise.svg)](https://github.com/wormLove/Biological_Image_Denoise/LICENSE)
+[![License](https://img.shields.io/github/license/wormLove/Biological_Image_Denoise.svg)](LICENSE)
 
 ## 📖 Introduction
 This pipeline is designed for denoising biological images that contain R, G, and B channels.
