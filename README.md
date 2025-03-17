@@ -62,14 +62,62 @@ python batch_run.py --InputDir /path/to/folder --Action d --OutputDir /path/to/o
 
 ---
 
-## 🛠 Configuration
-All parameters are stored in config.cfg, allowing you to fine-tune:
+## ⚙️ Configuration
+This pipeline is configurable via a `config.cfg` file, allowing you to fine-tune denoising parameters, morphological operations, and circularity filtering.
 
-- **Denoising filters** (e.g., extrema filter, adaptive threshold)
-- **Morphological operations**
-- **Circularity filtering**
-- **Channel mappings**
-- **Batch processing options**
+### **🔹 Basic Settings**
+```ini
+[basic_setting]
+FilePath = /path/to/your/file.tif  # Path to input TIFF image
+channel_name_list = BGR            # Input channel order
+OutDir = /path/to/output/folder    # Output directory
+```
+
+### **🔹 Denoising Settings**
+```ini
+[denoise_setting]
+extrema_filter = True                # Enable extrema filter
+adaptive_threshold_filter = True     # Enable adaptive threshold filter
+morphology_operations = True         # Enable morphological operations
+circularity_filter = True            # Enable circularity filter
+channel_plan = [1, 2]                # Channels to process (indexing starts from 0)
+gen_overlap = True                   # Generate overlap analysis
+```
+
+### **🔹 Extrema Filter**
+Removes extreme pixel values based on predefined thresholds.
+```ini
+[extrema_filter]
+max_thre = 10000        # Remove pixels with values greater than this threshold
+base_value = median     # Baseline value ('mean' | 'median' | '0')
+std_multi = 1           # Pixels below (base_value + std_multi * STD) are removed
+```
+
+### **🔹 Adaptive Threshold Filter**
+Removes pixels based on local mean intensity.
+```ini
+[adaptive_threshold_filter]
+filter_size = 50      # Sliding window size for local mean calculation
+mean_multi = 5        # Remove values below mean_multi * local_mean
+```
+
+### **🔹 Morphological Operations**
+Used for refining segmentation results.
+```ini
+[morphology_operations]
+kernal_rank = 2       # Kernel rank determines the structuring element size
+connectivity = 2      # Defines neighborhood connectivity (e.g., 4-connectivity, 8-connectivity)
+opening_operation = True   # Apply morphological opening
+closing_operation = True   # Apply morphological closing
+```
+
+### **🔹 Circularity Filter**
+Filters out non-circular signals and small signals.
+```ini
+[circularity_filter]
+circularity_thre = 0.75  # Remove objects with circularity below this threshold
+area_thre = 10           # Remove objects smaller than this area (in pixels)
+```
 
 ---
 
