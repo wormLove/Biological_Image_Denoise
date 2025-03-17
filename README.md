@@ -137,6 +137,18 @@ This pipeline generates the following outputs for each processed image:
 
 📌 **Note:** The **Denoised Image** represents the processed biological image after all denoising steps, while the **Overlap Analysis** highlights overlapping regions in the specified channels.
 
+---
+
+## 📜 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+[![License: MIT](https://img.shields.io/github/license/wormLove/Biological_Image_Denoise.svg)](LICENSE)
+
+---
+
+🚀 **Feel free to use, modify, and contribute to this project!** If you use this pipeline in your research, please consider citing it. 🎉
+
+
 
 
 
