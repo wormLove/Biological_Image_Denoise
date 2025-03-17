@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ## 🚀 Usage
 ### **1️⃣ Run Denoising and Analysis
 ```bash
-python main.py --FilePath /path/to/image.tif --Action ds --Config config.cfg
+python main.py --FilePath /path/to/image.tif --Action ds --Config config.cfg --OutputDir /path/to/output
 ```
 
 ### **📌 --Action 参数：
@@ -60,6 +60,20 @@ python main.py --FilePath /path/to/image.tif --Action ds --Config config.cfg
 python batch_run.py --InputDir /path/to/folder --Action d --OutputDir /path/to/output
 ```
 
+---
+
+## 🛠 Configuration
+All parameters are stored in config.cfg, allowing you to fine-tune:
+
+- **Denoising filters** (e.g., extrema filter, adaptive threshold)
+- **Morphological operations**
+- **Circularity filtering**
+- **Channel mappings**
+- **Batch processing options**
+
+---
+
+## 📊 Example Output
 
 
 
