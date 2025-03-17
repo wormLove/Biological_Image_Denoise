@@ -51,9 +51,9 @@ python main.py --FilePath /path/to/image.tif --Action ds --Config config.cfg
 ```
 
 ### **📌 --Action 参数：
-"s" → Only perform statistical analysis
-"d" → Only perform image denoising
-"ds" or "sd" → Perform both analysis and denoising
+- **s** → Only perform statistical analysis
+- **d** → Only perform image denoising
+- **"ds" or "sd"** → Perform both analysis and denoising
 
 ### **2️⃣ Batch Processing
 ```bash
