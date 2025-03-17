@@ -123,6 +123,22 @@ area_thre = 10           # Remove objects smaller than this area (in pixels)
 
 ## 📊 Example Output
 
+This pipeline generates the following outputs for each processed image:
+
+- **Denoised Image** (`*_filtered.png`): The image after all denoising filters are applied.
+- **Overlap Analysis** (`*_filtered_overlap.png`): Highlights overlapping regions in the processed channels.
+- **Statistics Report** (`channel_stat_report.pdf`): Contains statistical analysis of individual channels.
+- **Overlap Info File** (`*_filtered_overlap_info.txt`): Includes centroid coordinates and additional overlap statistics.
+
+### **📸 Sample Output**
+| **Denoised Image** | **Overlap Analysis** |
+|-------------------|-------------------|
+| ![Filtered](images/test_filtered.png) | ![Overlap](images/test_filtered_overlap.png) |
+
+📌 **Note:** The **Denoised Image** represents the processed biological image after all denoising steps, while the **Overlap Analysis** highlights overlapping regions in the specified channels.
+
+
+
 
 
 
