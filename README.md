@@ -33,4 +33,53 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
+### **3️⃣ Install dependencies**
+```bash
+# Upgrade pip to the latest version
+pip install --upgrade pip
+
+# Install all required packages from requirements.txt
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+### **1️⃣ Run Denoising and Analysis
+```bash
+python main.py --FilePath /path/to/image.tif --Action ds --Config config.cfg
+```
+
+### **📌 --Action 参数：
+"s" → Only perform statistical analysis
+"d" → Only perform image denoising
+"ds" or "sd" → Perform both analysis and denoising
+
+### **2️⃣ Batch Processing
+```bash
+python batch_run.py --InputDir /path/to/folder --Action d --OutputDir /path/to/output
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
