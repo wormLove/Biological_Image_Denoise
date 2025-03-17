@@ -18,6 +18,7 @@ It includes multiple filtering methods and supports batch processing.
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
 
 ### **2️⃣ Create a virtual environment**
 ```bash
@@ -30,5 +31,6 @@ source venv/bin/activate
 
 # On Windows:
 venv\Scripts\activate
+```
 
 
