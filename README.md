@@ -1,7 +1,7 @@
 # 📊 Biological_Image_Denoise 🚀
 > **A pipeline for tif image denoising and statistical analysis**
 
-[![GitHub stars](https://img.shields.io/github/stars/wormLove/Biological_Image_Denoise.svg?style=social)](https://github.com/wormLove/Biological_Image_Denoise)
+[![GitHub stars](https://img.shields.io/github/stars/wormLove/Biological_Image_Denoise.svg)](https://github.com/wormLove/Biological_Image_Denoise)
 [![GitHub issues](https://img.shields.io/github/issues/wormLove/Biological_Image_Denoise.svg)](https://github.com/wormLove/Biological_Image_Denoise/issues)
 [![License](https://img.shields.io/github/license/wormLove/Biological_Image_Denoise.svg)](LICENSE)
 
