@@ -87,7 +87,8 @@ def save_rgb_png(mtx, chidx_list, channel_name_list, image_path, gen_overlap):
         f.write(f"Overlap in G ratio: {overlap_g_ratio:.2%}\n")
         f.write(f"Overlap in R ratio: {overlap_r_ratio:.2%}\n")
 
-    cv2.imwrite(image_path.split('.')[0]+'_overlap.png', result_matrix.astype(int))
+    cv2.imwrite(image_path.split('.')[0]+'_overlap.png', result_matrix.astype(np.uint8))
+    tiff.imwrite(image_path.split('.')[0]+'_overlap.tif', result_matrix.astype(np.uint8))
 
 def save_mtx_tiff(mtx, image_path):
     tiff.imwrite(image_path, mtx)
